@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapters - Your Personal Reading Companion</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #FAF6F0;
+            color: #3E2C1C;
+            min-height: 100vh;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+        .hero .tagline {
+            font-size: 1.25em;
+            color: #8B7355;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+        .app-store-badge {
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .app-store-badge img {
+            height: 54px;
+        }
+
+        .features {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 32px;
+        }
+        .feature {
+            text-align: center;
+            padding: 32px 20px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+        }
+        .feature .icon {
+            font-size: 2.5em;
+            margin-bottom: 12px;
+        }
+        .feature h3 {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+        .feature p {
+            font-size: 0.95em;
+            color: #8B7355;
+            line-height: 1.6;
+        }
+
+        .quote {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            font-style: italic;
+            font-size: 1.15em;
+            color: #8B7355;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.85em;
+            color: #8B7355;
+        }
+        footer a {
+            color: #8B5E3C;
+            text-decoration: none;
+        }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Chapters</h1>
+        <p class="tagline">Your personal reading companion</p>
+        <p>Track your reading, set goals, join book clubs, and connect with fellow readers.</p>
+
+        <!-- Uncomment when your app is on the App Store:
+        <a class="app-store-badge" href="https://apps.apple.com/app/YOUR-APP-ID">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+        -->
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <div class="icon">&#128218;</div>
+            <h3>Track Your Library</h3>
+            <p>Add books by searching or scanning barcodes. Track your progress page by page.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">&#128200;</div>
+            <h3>Reading Stats</h3>
+            <p>See your reading streaks, pages read, and set yearly goals to stay motivated.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">&#128101;</div>
+            <h3>Book Clubs</h3>
+            <p>Create or join book clubs. Share invite codes and read together with friends.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">&#128240;</div>
+            <h3>Social Feed</h3>
+            <p>Follow other readers, share your journey, and discover what others are reading.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">&#128221;</div>
+            <h3>Notes & Highlights</h3>
+            <p>Save your favorite quotes and thoughts as you read. Your personal reading journal.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">&#128274;</div>
+            <h3>Private by Default</h3>
+            <p>Use the app locally without an account. Social features are completely optional.</p>
+        </div>
+    </div>
+
+    <div class="quote">
+        &ldquo;A reader lives a thousand lives before he dies. The man who never reads lives only one.&rdquo;
+        <br><br>
+        &mdash; George R.R. Martin
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Chapters. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="privacy.html">Privacy Policy</a> &middot;
+            <a href="mailto:birdiesawyer@gmail.com">Contact</a>
+        </p>
+    </footer>
+</body>
+</html>
