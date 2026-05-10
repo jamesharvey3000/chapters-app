@@ -28,7 +28,13 @@
             font-size: 1.25em;
             color: #8B7355;
             font-style: italic;
-            margin-bottom: 40px;
+            margin-bottom: 16px;
+        }
+        .hero .description {
+            font-size: 1.05em;
+            color: #5C4A3A;
+            line-height: 1.6;
+            margin-bottom: 32px;
         }
         .app-store-badge {
             display: inline-block;
@@ -41,7 +47,7 @@
         .features {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px 80px;
+            padding: 40px 20px 60px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 32px;
@@ -64,6 +70,69 @@
             font-size: 0.95em;
             color: #8B7355;
             line-height: 1.6;
+        }
+
+        .pricing {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .pricing h2 {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+        .pricing .subtitle {
+            font-size: 1.05em;
+            color: #8B7355;
+            margin-bottom: 40px;
+        }
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        @media (max-width: 500px) {
+            .pricing-cards { grid-template-columns: 1fr; }
+        }
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: left;
+        }
+        .pricing-card.premium {
+            border: 2px solid #8B5E3C;
+        }
+        .pricing-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 4px;
+        }
+        .pricing-card .price {
+            font-size: 1.1em;
+            color: #8B5E3C;
+            margin-bottom: 20px;
+        }
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .pricing-card ul li {
+            font-size: 0.95em;
+            color: #5C4A3A;
+            padding: 6px 0;
+            line-height: 1.5;
+        }
+        .pricing-card ul li::before {
+            content: "\2713\0020";
+            color: #8B5E3C;
+            font-weight: bold;
+        }
+        .trial-note {
+            margin-top: 24px;
+            font-size: 0.95em;
+            color: #8B7355;
+            font-style: italic;
         }
 
         .quote {
@@ -94,7 +163,7 @@
     <div class="hero">
         <h1>Chapters</h1>
         <p class="tagline">Your personal reading companion</p>
-        <p>Track your reading, set goals, join book clubs, and connect with fellow readers.</p>
+        <p class="description">Track your reading, set goals, join book clubs, and connect with fellow readers. Free to download with optional premium features.</p>
 
         <!-- Uncomment when your app is on the App Store:
         <a class="app-store-badge" href="https://apps.apple.com/app/YOUR-APP-ID">
@@ -117,7 +186,7 @@
         <div class="feature">
             <div class="icon">&#128101;</div>
             <h3>Book Clubs</h3>
-            <p>Create or join book clubs. Share invite codes and read together with friends.</p>
+            <p>Join book clubs and read together with friends. Share invite codes to connect.</p>
         </div>
         <div class="feature">
             <div class="icon">&#128240;</div>
@@ -136,6 +205,39 @@
         </div>
     </div>
 
+    <div class="pricing">
+        <h2>Chapters+</h2>
+        <p class="subtitle">Unlock the full reading experience</p>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3>Free</h3>
+                <p class="price">Always free</p>
+                <ul>
+                    <li>Unlimited book tracking</li>
+                    <li>Reading stats &amp; goals</li>
+                    <li>Notes &amp; highlights</li>
+                    <li>Barcode scanner</li>
+                    <li>Social feed &amp; following</li>
+                    <li>Join book clubs</li>
+                    <li>Home screen widgets</li>
+                </ul>
+            </div>
+            <div class="pricing-card premium">
+                <h3>Chapters+</h3>
+                <p class="price">$2.99 / month</p>
+                <ul>
+                    <li>Everything in Free</li>
+                    <li>Create book clubs</li>
+                    <li>Community tags &amp; tropes</li>
+                    <li>Year in Review</li>
+                    <li>Push notifications</li>
+                    <li>Support indie development</li>
+                </ul>
+            </div>
+        </div>
+        <p class="trial-note">Start with a 7-day free trial. Cancel anytime.</p>
+    </div>
+
     <div class="quote">
         &ldquo;A reader lives a thousand lives before he dies. The man who never reads lives only one.&rdquo;
         <br><br>
@@ -143,7 +245,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Chapters. All rights reserved.</p>
+        <p>&copy; 2026 JH Dev. All rights reserved.</p>
         <p style="margin-top: 8px;">
             <a href="privacy.html">Privacy Policy</a> &middot;
             <a href="mailto:birdiesawyer@gmail.com">Contact</a>
